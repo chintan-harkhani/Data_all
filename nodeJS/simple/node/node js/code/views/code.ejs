@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 style="font-size: 70px; text-align: center;">Student Details</h1>
+  <table border="1" style="margin:0 auto; margin-top: 70px;">
+    <tr style="text-align: center;">
+      <th style="font-size: 30px; padding: 0 20px; ">Name</th>
+      <th style="font-size: 30px; padding: 0 20px; ">age</th>
+      <th style="font-size: 30px; padding: 0 20px; ">study</th>
+      <th style="font-size: 30px; padding: 0 20px; ">roll_Number</th>
+    </tr>
+    <% for(let s of user){ %>
+      <tr>
+        <td>
+          <%= s.name%>
+        </td>
+        <td>
+          <%= s.age%>
+        </td>
+        <td>
+          <%= s.Study%>
+        </td>
+        <td>
+          <%= s.Rollnumber%>
+        </td>
+      </tr>
+      <% }%>
+  </table>
+</body>
+
+</html>
